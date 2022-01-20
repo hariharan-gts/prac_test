@@ -4,14 +4,18 @@ public class best_time_tobuyandsell {
     public static int max_prof(int a[]) {
     	int max=0;
     	int min=Integer.MAX_VALUE;
+    	int smin=Integer.MAX_VALUE;
+    	int smax=0;
     	for(int i=0;i<a.length;i++) {
     		min=Math.min(a[i],min);
     		max=Math.max(max, a[i]-min);
+    		smin=Math.min(smin, a[i]-max);
+    		smax=Math.max(smax, a[i]-smin);
     	}
-    	return max;
+    	return smax;
     }
 	public static void main(String[] args) {
-	int a[]= {5,4,3,2,7};	
+	int a[]= {3,3,5,0,0,3,1,4};	
     System.out.println(max_prof(a));
 	}
 
