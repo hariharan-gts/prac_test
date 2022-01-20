@@ -9,7 +9,7 @@ public class best_time_tobuyandsell {
     	for(int i=0;i<a.length;i++) {
     		min=Math.min(a[i],min);
     		max=Math.max(max, a[i]-min);
-    		smin=Math.min(smin, a[i]-max);
+    		smin=Math.min(smin, a[i]-max );
     		smax=Math.max(smax, a[i]-smin);
     	}
     	return smax;
