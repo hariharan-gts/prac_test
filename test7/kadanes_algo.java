@@ -6,8 +6,7 @@ public class kadanes_algo {
 	   int max_end=0;
 	   for(int i=0;i<a.length;i++) {
 		   max_end+=a[i];
-		   if(max_so_far<max_end)
-			   max_so_far=max_end;
+		   max_so_far=Math.max(max_end, max_so_far);
 		   if(max_end<0)
 			   max_end=0;
 	   }

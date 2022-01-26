@@ -15,7 +15,7 @@ public class best_time_tobuyandsell {
     	return smax;
     }
 	public static void main(String[] args) {
-	int a[]= {3,3,5,0,0,3,1,4};	
+	int a[]= {10,20,25,15,40 };	
     System.out.println(max_prof(a));
 	}
 
