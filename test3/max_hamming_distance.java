@@ -1,3 +1,5 @@
+LINK:https://www.geeksforgeeks.org/find-a-rotation-with-maximum-hamming-distance-set-2/
+
 package test3;
 
 public class max_hamming_distance {
