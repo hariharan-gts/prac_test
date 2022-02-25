@@ -1,3 +1,5 @@
+GFG LINK : https://www.geeksforgeeks.org/hamming-distance-between-two-integers/
+
 package test3;
 
 public class hamming_distance {
