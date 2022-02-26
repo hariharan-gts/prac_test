@@ -1,3 +1,5 @@
+
+LINK:https://www.geeksforgeeks.org/maximum-number-of-diamonds-that-can-be-gained-in-k-minutes/
 package test5;
 
 public class greedy_diamonds {
