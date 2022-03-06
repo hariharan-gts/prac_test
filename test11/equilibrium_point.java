@@ -3,31 +3,21 @@ package test11;
 
 public class equilibrium_point {
    public static void equilirium(int a[],int n) {
-	   int mid=n/2;
-	   int lsum=0;
-	   int rsum=0;
-	   for(int i=0;i<mid;i++)
-		   lsum+=a[i];
-	   for(int i=n-1;i>mid;i--)
-		   rsum+=a[i];
-	   if(rsum>lsum) {
-		   while(rsum>lsum) {
-			   rsum-=a[mid+1];
-			   lsum+=a[mid];
-			   mid++;
-		   }
-	   }
-	   else {
-		   while(lsum>rsum) {
-			   rsum+=a[mid];
-			   lsum+=a[mid-1];
-			   mid--;
-		   }
-	   }
-	   if(lsum==rsum)
-		   System.out.println(mid);
-	   else
-		   System.out.println(-1);
+	  int lsum=0,rsum=0;
+    for(int i=0;i<n;i++){
+        lsum+=a[i];
+    }
+    for(int i=0;i<n;i++){
+        lsum-=a[i];
+        if(lsum==rsum)
+        {
+            System.out.println(i);
+            return;
+        }
+        rsum+=a[i];
+
+    }
+    System.out.println(-1);
 		   
    }
 	public static void main(String[] args) {
