@@ -1,4 +1,4 @@
-GFG LINK : https://www.geeksforgeeks.org/hamming-distance-between-two-integers/
+//GFG LINK : https://www.geeksforgeeks.org/hamming-distance-between-two-integers/
 
 package test3;
 

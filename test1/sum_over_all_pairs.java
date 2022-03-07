@@ -1,6 +1,4 @@
 package test1;
-
-
 /*
  * If |a[j]-a[i]| > 1
    f(a[i], a[j]) = a[j] - a[i] 

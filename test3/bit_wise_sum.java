@@ -32,7 +32,7 @@ public class bit_wise_sum {
 			}
 		}
 		System.out.println(sum);
-
+        System.out.println(10&15);
 	}
 
 }
