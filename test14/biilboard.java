@@ -8,21 +8,20 @@ public class biilboard {
 	static int max(int m,int x[],int r[],int n,int t) {
 		int rev[]=new int[m+1];
 		Arrays.fill(rev, 0);
-		
 		int nxt=0;
 		for(int i=1;i<=m;i++) {
 			if(nxt<n) {
-				if(x[nxt]!=i)
+				if(x[nxt]!=i) {
 					rev[i]=rev[i-1];
-				else {
-					if(i<=t)
-						rev[i]=Math.max(rev[i-1],r[nxt]);
-					else
-						rev[i]=Math.max(rev[i-1], r[nxt]+rev[i-t-i]);
-					
-					
 				}
-				nxt++;
+				else {
+					if(i<=t) {
+						rev[i]=Math.max(rev[i-1], r[nxt]);
+					}else {
+						rev[i]=Math.max(rev[i-1],r[nxt]+rev[i-t-1]);
+					}
+					nxt++;
+				}
 			}
 			else
 				rev[i]=rev[i-1];

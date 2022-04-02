@@ -12,7 +12,7 @@ public class perfsq_str {
     			if(((i>>j)&1)==1) {
     				str+=s.charAt(j);
     			}
-    		}
+    	
     		if(str.charAt(0)!='0') {
     			int temp=0;
     			for(int l=0;l<str.length();l++) {
@@ -28,6 +28,7 @@ public class perfsq_str {
     		}
     	}
     	
+    }
     	if(ans==-1)return ans;
     	else
     		return Integer.parseInt(num);

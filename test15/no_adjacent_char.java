@@ -58,7 +58,7 @@ public class no_adjacent_char {
     	return String.valueOf(ans);
     }
 	public static void main(String[] args) {
-	String a="bbbaa";
+	String a="bbbaacc";
 	System.out.println(reaarange(a));
 
 	}

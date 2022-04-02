@@ -40,7 +40,16 @@ for (int i=0;i<size;i++) {
 	for(int j=0;j<b.length;j++) {
 		System.out.println(b[j][0]+"\t"+b[j][1]);
 	}
-	
+	ArrayList<Integer>li=new ArrayList<Integer>();
+	li.add(4);
+	li.add(5);
+	li.add(5);
+
+	li.add(5);
+
+	li.add(4);
+	li.add(9);
+	System.out.println(Collections.frequency(li, 5));
 	
 	}
 
